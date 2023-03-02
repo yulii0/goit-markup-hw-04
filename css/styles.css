@@ -245,6 +245,30 @@ address {
 .specifics-list-item {
   width: 264px;
 }
+.specifics-list-item::before {
+  display: block;
+  content: '';
+  height: 112px;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f4f4fd;
+  margin-bottom: 8px;
+}
+
+.icon-antena::before {
+  background-image: url(../images/antenna.svg);
+}
+.icom-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
 .specifics-list .title {
   margin-top: 0;
   margin-bottom: 8px;
@@ -287,6 +311,35 @@ address {
   text-align: center;
   padding: 32px 16px;
 }
+
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+.team-social-item {
+  width: 40px;
+  height: 40px;
+}
+.team-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--primary-brand);
+}
+
+.team-social-link:is(:hover, :focus) {
+  background-color: var(--primary-pressed-state);
+  color: #31d0aa;
+}
+.team-social-icon {
+  fill: currentColor;
+}
+
 /* BUTTONS */
 .button {
   align-items: center;
